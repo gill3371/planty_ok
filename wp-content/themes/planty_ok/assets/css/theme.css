@@ -1,0 +1,82 @@
+/* Création des variables pour changement couleurs site */
+:root {
+  --bt-lightpink: #dc9f96;
+  --bt-darkpink: #c02e44;
+  --txt-darkgreen: #3b8e46;
+  --txt-pink: #d2776a;
+  --bckgd-color: #ece2da;
+}
+
+/* Paramètres de bases */
+
+* {
+  color: black;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Syne", sans-serif;
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  padding: 0px 0px 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo img {
+  display: block;
+  width: 170%;
+  height: auto;
+  max-width: 200px;
+}
+
+/* MENU DE NAVIGATION */
+
+nav ul {
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  padding: 20px;
+  list-style: none;
+}
+
+nav .order_menu {
+  background-color: var(--bt-lightpink);
+}
+
+nav .order_menu:hover {
+  background-color: var(--bt-darkpink);
+}
+
+nav .order_menu a {
+  color: white;
+}
+
+/* FOOTER */
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  background-color: white;
+}
+
+footer img {
+  /* max-height: 50px; */
+  width: 100%;
+}
