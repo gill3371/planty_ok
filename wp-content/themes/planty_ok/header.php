@@ -16,7 +16,7 @@
 
 <header>
     <div class="logo">
-        <a href="#">
+        <a href="<?php echo site_url() ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png" alt="Logo Planty">
         </a>
     </div>

@@ -12,11 +12,11 @@
 * {
   color: black;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Syne", sans-serif;
 }
 
@@ -24,6 +24,30 @@ a {
   font-size: 1em;
   text-decoration: none;
 }
+
+h1 {
+  font-size: 2.375em;
+  font-weight: 800;
+  color: var(--txt-darkgreen);
+}
+
+h2 {
+  font-size: 1.875em;
+  font-weight: 800;
+  color: var(--txt-pink);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--txt-darkgreen);
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 
 /* HEADER */
 
@@ -79,4 +103,55 @@ footer a {
 footer img {
   /* max-height: 50px; */
   width: 100%;
+}
+
+.home_block1 {
+  background-color: var(--bckgd-color);
+  padding-top: 36px;
+}
+
+.home_visual {
+  padding-top: 36px;
+  )}
+
+.home_visual img {
+  width: 40%;
+  height: auto;
+}
+
+.rounded_block {
+  background-color: var(--bckgd-color);
+  height: 50px;
+  border-radius: 0 0 45% 45%;
+  box-shadow: 0px 4px var(--bt-lightpink);
+}
+
+.part2_title {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.part2_text {
+  width: 50%;
+  margin: auto;
+}
+
+.taste_box {
+  width: auto;
+  display: inline-block;
+  position: relative;
+}
+
+.taste_bckg img {
+  width: 75%;
+  height: auto;
+}
+
+.taste_title {
+  width: auto%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  color: white;
 }
