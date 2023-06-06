@@ -112,7 +112,7 @@ footer img {
 
 .home_visual {
   padding-top: 36px;
-  )}
+  }
 
 .home_visual img {
   width: 40%;
@@ -121,9 +121,18 @@ footer img {
 
 .rounded_block {
   background-color: var(--bckgd-color);
-  height: 50px;
+  height: 35px;
   border-radius: 0 0 45% 45%;
+}
+
+.shadow_box {
   box-shadow: 0px 4px var(--bt-lightpink);
+}
+
+.banner_can img {
+  width: 100%;
+  height: auto;
+  padding-top: 64px;
 }
 
 .part2_title {
@@ -132,26 +141,106 @@ footer img {
 }
 
 .part2_text {
-  width: 50%;
+  width: 35%;
   margin: auto;
+  margin-bottom: 28px;
 }
 
-.taste_box {
-  width: auto;
-  display: inline-block;
+.part_3 {
+  padding-top: 28px;
+  background-color: var(--bckgd-color);
+}
+
+.part_3_text {
+  padding-bottom: 40px;
+}
+
+.taste_group > .wp-block-group__inner-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.taste_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.taste_box > .wp-block-group__inner-container {
+  width: 350px;
+  height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
-.taste_bckg img {
-  width: 75%;
+.taste_box_title {
+  position: absolute;
+}
+
+.taste_box_title h1 {
+  color: white;
+}
+
+.planty_bouton {
+  justify-content: center;
+  text-align: center;
+}
+
+.planty_bouton .wp-element-button{
+  width: 100px;
+  height: 20px;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: var(--bt-lightpink);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.witness_group > .wp-block-group__inner-container {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 32px;
+}
+
+.witness_box > .wp-block-group__inner-container {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.witness_img {
+  width: 100px;
   height: auto;
 }
 
-.taste_title {
-  width: auto%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 40%;
-  color: white;
+.witness_img img {
+  width: 100%;
+  height: auto;
+}
+
+.witness_name {
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.witness_notification {
+  width: 200px;
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 1em;
+}
+
+.part4_title {
+  color: var(--txt-darkgreen);
+  padding: 32px 0 32px 0;
 }
