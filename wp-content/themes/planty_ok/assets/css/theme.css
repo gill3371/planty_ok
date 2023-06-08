@@ -420,3 +420,43 @@ input[type="submit"]:hover {
   width: 100px;
   height: auto;
 }
+
+/* ORDER PAGE */
+
+.order_title, .order_subtitle {
+  color: blue;
+}
+
+/* ORDER PAGE order selector */
+
+.order_product_group > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+  margin: auto;
+}
+
+.order_product_box > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order_product_img {
+  width: 200px;
+  position: relative;
+}
+
+.order_product_img > img {
+  width: 100%;
+  height: auto;
+}
+
+.order_product_title {
+  position: absolute;
+}
+
+.order_product_title > .wp-block-group__inner-container > h2 {
+  color: white;
+  font-size: 1em;
+}
