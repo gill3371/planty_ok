@@ -359,43 +359,42 @@ footer img {
   padding-top: 64px;
 }
 
-.wpcf7 {
-  background: var(--bckgd-color);
+contact_form > .wp-block-group__inner-container >.wpcf7 {
   display: flex;
   justify-content: center;
 }
 
-form {
+.contact_form > .wp-block-group__inner-container form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-form > p {
+.contact_form > .wp-block-group__inner-container form > p {
   text-align: left;
   padding-top: 18px;
 }
 
-label > em {
+.contact_form > .wp-block-group__inner-container label > em {
   line-height: 32px;
 }
 
-span > input, textarea {
+.contact_form > .wp-block-group__inner-container span > input, textarea {
   width: 350px;
   border: 0;
   border-radius: 6px;
 }
 
-span > textarea {
+.contact_form > .wp-block-group__inner-container span > textarea {
   position: relative;
   z-index: 2;
 }
 
-span > input {
+.contact_form > .wp-block-group__inner-container span > input {
   height: 36px;
 }
 
-input[type="submit"] {
+.contact_form input[type="submit"] {
   width: 160px;
   border: 0;
   height: 32px;
@@ -406,7 +405,7 @@ input[type="submit"] {
   background-color: var(--bt-lightpink);
 }
 
-input[type="submit"]:hover {
+.contact_form input:hover {
   background-color: var(--bt-darkpink);
 }
 
@@ -429,7 +428,43 @@ input[type="submit"]:hover {
 
 /* ORDER PAGE order selector */
 
+.order_group {
+  background-color: var(--txt-darkgreen);
+  padding-top: 48px;
+}
+
+.order_product_block {
+  display: flex;
+  justify-content: center;
+}
+
+.order_product_block > .wp-block-group__inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .order_product_group > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+  margin: auto;
+}
+
+.order_group > .wp-block-group__inner-container > h1 {
+  color: white;
+  padding-bottom: 18px;
+}
+
+.order_subtitle {
+  color: white;
+  text-align: left;
+  padding-bottom: 16px;
+  font-weight: 400;
+}
+
+.products_quantity {
+  padding-top: 10px;
   display: flex;
   justify-content: center;
   column-gap: 32px;
@@ -458,5 +493,120 @@ input[type="submit"]:hover {
 
 .order_product_title > .wp-block-group__inner-container > h2 {
   color: white;
+  font-size: 1.25em;
+}
+
+.order_quantity {
+  width: 82px;
+  height: 52px;
+}
+
+.quantity_box {
+  position: relative;
+  display: flex;
+  column-gap: 14px;
+}
+
+.quantity_buton br {
+  display: none;
+}
+
+.quantity_buton span {
+  display: block;
+  width: 34px;
+  height: 27px;
+  background-color: var(--bt-lightpink);
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.quantity_buton span:hover {
+  background-color: var(--bt-darkpink);
+}
+
+.plus_buton {
+  border-bottom: 2px solid white;
+}
+
+.quantity_box > .quantity_buton {
+  display: inline-block;
+  position: absolute;
+  left: 52px;
+  top: 0;
+  z-index: 2;
+}
+
+.quantity_valid_buton {
+  width: 100px;
+  border: 0;
+  height: 56px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bt-lightpink);
+  cursor: pointer;
+}
+
+.quantity_valid_buton:hover {
+  background-color: var(--bt-darkpink);
+}
+
+/* ORDER PAGE delivry infos */
+
+.delivery_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery_info > p {
+  padding-top: 36px;
+}
+
+.delivery_group {
+  display: flex;
+  justify-content: center;
+  column-gap: 68px;
+}
+
+.delivery_group input {
+  width: 414px;
+  height: 50px;
+  border: O;
+  border-radius: 8px;
+}
+
+.delivery_group p {
+  color: white;
+  text-align: left;
   font-size: 1em;
+}
+
+.delivery_text {
+  color: white;
+  line-height: 32px;
+}
+
+.delivery_subtitle {
+  padding-bottom: 12px;
+  font-size: 1.5em;
+}
+
+.delivery_valid_buton {
+  width: 160px;
+  border: 0;
+  height: 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bt-lightpink);
+  cursor: pointer;
+}
+
+.delivery_valid_buton:hover {
+  background-color: var(--bt-darkpink);
 }
