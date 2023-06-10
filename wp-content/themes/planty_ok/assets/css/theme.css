@@ -87,8 +87,13 @@ nav li {
   list-style: none;
 }
 
+nav li:hover {
+  background-color: var(--bckgd-color);
+}
+
 nav .order_menu {
   background-color: var(--bt-lightpink);
+  order: 4;
 }
 
 nav .order_menu:hover {
@@ -97,6 +102,10 @@ nav .order_menu:hover {
 
 nav .order_menu a {
   color: white;
+}
+
+nav .admin_menu {
+  order: 3;
 }
 
 .rounded_block {
