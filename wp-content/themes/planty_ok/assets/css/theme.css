@@ -232,6 +232,11 @@ footer img {
 
 /* HOME PAGE partie 4 (temoignages) */
 
+.part4_title {
+  color: var(--txt-darkgreen);
+  padding: 32px 0 32px 0;
+}
+
 .witness_group > .wp-block-group__inner-container {
   width: 85%;
   display: flex;
@@ -247,7 +252,7 @@ footer img {
 }
 
 .witness_img {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -262,15 +267,11 @@ footer img {
 }
 
 .witness_notification {
-  width: 200px;
+  width: 160px;
   text-align: left;
   word-wrap: break-word;
+  font-size: .85em;
   line-height: 1em;
-}
-
-.part4_title {
-  color: var(--txt-darkgreen);
-  padding: 32px 0 32px 0;
 }
 
 /* PAGE CONTACT */
@@ -297,8 +298,10 @@ footer img {
 }
 
 .contact_P1_title {
+  position: relative;
   color: var(--txt-pink);
   padding-bottom: 24px;
+  z-index: 1;
 }
 
 .contact_P1_text {
@@ -353,7 +356,8 @@ footer img {
   height: auto;
   position: absolute;
   bottom: 0px;
-  right: -30px;
+  padding-left: calc( 50% + 310px);
+  z-index: -1;
 }
 
 .staff_group > .wp-block-group__inner-container > figure > img {
@@ -366,6 +370,10 @@ footer img {
 .form_group {
   background-color: var(--bckgd-color);
   padding-top: 64px;
+}
+
+.form_group > .wp-block-group__inner-container {
+  position: relative;
 }
 
 contact_form > .wp-block-group__inner-container >.wpcf7 {
@@ -420,8 +428,8 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .contact_form_flower {
   position: absolute;
-  bottom: -350px;
-  left: 330px;
+  bottom: 200px;
+  padding-left: calc(50% - 225px);
 }
 
 .contact_form_flower > img {
@@ -437,8 +445,9 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 /* ORDER PAGE order selector */
 
-.order_group {
+.order_group > .wp-block-group__inner-container {
   background-color: var(--txt-darkgreen);
+  margin: auto;
   padding-top: 48px;
 }
 
@@ -618,4 +627,125 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .delivery_valid_buton:hover {
   background-color: var(--bt-darkpink);
+}
+
+/* ***************** media queries - ADAPTATION RESPONSIVE *************** */
+
+
+@media (max-width: 1000px) {
+  
+.witness_group > .wp-block-group__inner-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.contact_P1_title {
+  width: 70%;
+  margin: auto;
+}
+
+}
+
+@media (max-width: 700px) {
+
+.logo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav a {
+  font-size: 12px;
+}
+
+footer a {
+  padding-bottom: 25px;
+}
+h1 {
+  font-size: 1.35em;
+}
+
+h2 {
+  font-size: 1.225em;
+}
+
+.banner_can img {
+  padding-top: 0px;
+}
+
+.part2_text {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.part_3_text {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+.taste_box img {
+  width: 275px;
+  height: auto;
+  display: block;
+}
+
+.part4_title {
+  width: 80%;
+  margin: auto;
+  font-size: 1.25em;
+  padding: 32px 0 32px 0;
+}
+
+.contact_part1 > .wp-block-group__inner-container {
+  padding-top: 60px;
+}
+
+.contact_part1 > .wp-block-group__inner-container > figure {
+  width: 85px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.staff_group > .wp-block-group__inner-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.staff_group > .wp-block-group__inner-container > figure {
+  width: 75px;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  padding-left: calc( 50% + 80px);
+}
+
+.form_group {
+  padding-top: 20px;
+}
+
+.contact_form > .wp-block-group__inner-container span > input, textarea {
+  width: 250px;
+}
+
+.contact_form_flower {
+  position: absolute;
+  bottom: 95px;
+  padding-left: calc(50% - 175px);
+}
+
+
+
 }
