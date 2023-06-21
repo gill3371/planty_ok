@@ -183,6 +183,7 @@ footer img {
 
 .taste_group > .wp-block-group__inner-container {
   width: 85%;
+  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -398,17 +399,20 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .contact_form > .wp-block-group__inner-container span > input, textarea {
   width: 350px;
-  border: 0;
+  border: none;
   border-radius: 6px;
 }
 
 .contact_form > .wp-block-group__inner-container span > textarea {
   position: relative;
   z-index: 2;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) ;
 }
 
 .contact_form > .wp-block-group__inner-container span > input {
-  height: 36px;
+  height: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) ;
 }
 
 .contact_form input[type="submit"] {
@@ -428,7 +432,7 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .contact_form_flower {
   position: absolute;
-  bottom: 200px;
+  top: 360px;
   padding-left: calc(50% - 225px);
 }
 
@@ -439,41 +443,6 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 /* ORDER PAGE */
 
-.order_title, .order_subtitle {
-  color: blue;
-}
-
-/* ORDER PAGE order selector */
-
-.order_group > .wp-block-group__inner-container {
-  background-color: var(--txt-darkgreen);
-  margin: auto;
-  padding-top: 48px;
-}
-
-.order_product_block {
-  display: flex;
-  justify-content: center;
-}
-
-.order_product_block > .wp-block-group__inner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.order_product_group > .wp-block-group__inner-container {
-  display: flex;
-  justify-content: center;
-  column-gap: 32px;
-  margin: auto;
-}
-
-.order_group > .wp-block-group__inner-container > h1 {
-  color: white;
-  padding-bottom: 18px;
-}
-
 .order_subtitle {
   color: white;
   text-align: left;
@@ -481,28 +450,40 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
   font-weight: 400;
 }
 
-.products_quantity {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  column-gap: 32px;
+/* ORDER PAGE order selector */
+
+.order_group {
+  background-color: var(--txt-darkgreen);
+}
+
+.order_group > .wp-block-group__inner-container {
+  width: 80%;
   margin: auto;
+  padding-top: 48px;
+}
+
+.order_group > .wp-block-group__inner-container > h1 {
+  color: white;
+  padding-bottom: 18px;
+}
+
+.order_product_group > .wp-block-group__inner-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .order_product_box > .wp-block-group__inner-container {
+  width: 200px;
+  height: auto;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.order_product_img {
-  width: 200px;
-  position: relative;
-}
-
 .order_product_img > img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .order_product_title {
@@ -512,6 +493,16 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 .order_product_title > .wp-block-group__inner-container > h2 {
   color: white;
   font-size: 1.25em;
+}
+
+.products_quantity {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_name > p {
+  display: none;
 }
 
 .order_quantity {
@@ -574,6 +565,8 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 /* ORDER PAGE delivry infos */
 
 .delivery_info {
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -585,15 +578,20 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 }
 
 .delivery_group {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  column-gap: 68px;
+  justify-content: space-between;
+  column-gap: 10%;
+}
+
+.delivery_col1, .delivery_col2 {
+  width: 100%;
 }
 
 .delivery_group input {
-  width: 414px;
+  width: 100%;
   height: 50px;
-  border: O;
+  border: none;
   border-radius: 8px;
 }
 
@@ -647,6 +645,52 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
   margin: auto;
 }
 
+.delivery_group {
+  flex-direction: column;
+  column-gap: 20px;
+}
+
+.delivery_col2 {
+  padding-top: 30px;
+}  
+
+.order_group > .wp-block-group__inner-container {
+  width: 80%;
+}
+
+
+.order_subtitle {
+  text-align: center;
+}
+
+.order_product_group {
+  display: none;
+}
+
+.products_quantity {
+  flex-direction: column;
+}
+
+.product_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_name > p {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 16px;
+}
+
+.product_name > p > span {
+  font-weight: 900;
+  color: white;
+  font-size: 1.25em;
+}
+
 }
 
 @media (max-width: 700px) {
@@ -654,66 +698,66 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 .logo img {
   width: 100%;
   max-width: 100px;
-}
+}  
 
 nav li {
   padding: 10px;
-}
+}  
 
 nav a {
   font-size: 12px;
-}
+}  
 
 footer a {
   padding-bottom: 25px;
-}
+}  
 h1 {
   font-size: 1.35em;
-}
+}  
 
 h2 {
   font-size: 1.225em;
-}
+}  
 
 .banner_can img {
   padding-top: 0px;
-}
+}  
 
 .part2_text {
   width: 50%;
   margin: auto;
   margin-bottom: 28px;
-}
+}  
 
 .part_3_text {
   width: 70%;
   margin: auto;
   padding-bottom: 40px;
-}
+}  
 
 .taste_box img {
   width: 275px;
   height: auto;
   display: block;
-}
+}  
 
 .part4_title {
   width: 80%;
   margin: auto;
   font-size: 1.25em;
   padding: 32px 0 32px 0;
-}
+}  
 
 .contact_part1 > .wp-block-group__inner-container {
   padding-top: 60px;
-}
+}  
 
 .contact_part1 > .wp-block-group__inner-container > figure {
   width: 85px;
   position: absolute;
   top: 5%;
   left: 10%;
-}
+}  
 
 .staff_group > .wp-block-group__inner-container {
   width: 85%;
@@ -722,7 +766,7 @@ h2 {
   row-gap: 32px;
   position: relative;
   padding-bottom: 20px;
-}
+}  
 
 .staff_group > .wp-block-group__inner-container > figure {
   width: 75px;
@@ -730,22 +774,20 @@ h2 {
   position: absolute;
   bottom: 0px;
   padding-left: calc( 50% + 80px);
-}
+}  
 
 .form_group {
   padding-top: 20px;
-}
+}  
 
 .contact_form > .wp-block-group__inner-container span > input, textarea {
   width: 250px;
-}
+}  
 
 .contact_form_flower {
   position: absolute;
   bottom: 95px;
   padding-left: calc(50% - 175px);
-}
-
-
+}  
 
 }
