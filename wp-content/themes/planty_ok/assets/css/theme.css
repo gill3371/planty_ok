@@ -465,7 +465,9 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .order_group > .wp-block-group__inner-container > h1 {
   color: white;
-  padding-bottom: 18px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid white;
+  margin-bottom: 40px;
 }
 
 .order_product_group > .wp-block-group__inner-container {
@@ -498,6 +500,7 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .products_quantity {
   padding-top: 10px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -582,12 +585,19 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  column-gap: 10%;
+  /* column-gap: 10%; */
+  padding-top: 40px;
+  border-top: 1px solid white;
 }
 
 .delivery_col1, .delivery_col2 {
-  width: 100%;
+  width: 45%;
 }
+
+.delivery_col1 {
+  margin-right: 5%;
+  border-right: 1px solid white
+;}
 
 .delivery_group input {
   width: 100%;
@@ -652,7 +662,17 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 
 .delivery_group {
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
+}
+
+.delivery_col1, .delivery_col2 {
+  width: 100%;
+}
+
+.delivery_col1 {
+  padding-right: 0;
+  border-right: none;
 }
 
 .delivery_col2 {

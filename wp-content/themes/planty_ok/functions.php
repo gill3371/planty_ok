@@ -5,10 +5,16 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
     // // Chargement du style.css du thème parent BlankSlate 
-    // wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     // Chargement du theme.css du thème enfant Planty 
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/assets/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/theme.css'));
 }
+
+// Désactivation des styles Gutenberg
+
+add_action('wp_enqueue_scripts', function () {
+    wp_dequeue_style('wp-block-library');
+});
 
 // Enregister un menu personnalisé
 
@@ -29,9 +35,3 @@ function add_extra_item_to_nav_menu($items, $args)
     }
     return $items;
 }
-
-// Désactivation des styles Gutenberg
-
-add_action('wp_enqueue_scripts', function () {
-    wp_dequeue_style('wp-block-library');
-});
