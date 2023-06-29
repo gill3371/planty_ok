@@ -512,6 +512,7 @@ contact_form > .wp-block-group__inner-container >.wpcf7 {
 .order_quantity {
   width: 82px;
   height: 52px;
+  box-sizing: content-box ;
 }
 
 .quantity_box {
